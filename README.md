@@ -18,9 +18,33 @@
 如果 f1<=f2，則輸出華氏轉攝氏的溫度轉換速查表，速查表可能有多行，每行一個溫度轉換對，形如 f1 : c1，其中 c1 保留小數點兩位。速查表以 2 華氏度為刻度。</h4>
 <h2>範例 1</h2>
 
+![image](https://github.com/qwertidy/final_report/blob/main/1.png)
 <h2>範例 2</h2>
+
+![image](https://github.com/qwertidy/final_report/blob/main/2.png)
 <h2>範例 3</h2>
+
+![image](https://github.com/qwertidy/final_report/blob/main/3.png)
 <h2>範例 4</h2>
+
+![image](https://github.com/qwertidy/final_report/blob/main/4.png)
 <h2>範例 5</h2>
-<h2>程式碼</h2>
-<h4></h4>
+
+![image](https://github.com/qwertidy/final_report/blob/main/5.png)
+<h2>程式碼使用VScode實作</h2>
+
+```python
+def F2C(f):
+    c=5*(f-32)/9
+    return c
+print("輸入格式(int,int) :")
+left,right=map(int,input().split (','))
+print("-----------------------------")
+if left>right:
+    print('error')
+else:
+    for f in range(left,right+1,2):
+        print("{}:{:.2f}".format(f,F2C(f)))
+```
+
+
